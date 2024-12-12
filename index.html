@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #0077b6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .recommendation {
+            margin: 2rem 0;
+        }
+        .recommendation img {
+            width: 300px;
+            height: auto;
+            margin: 0.5rem;
+        }
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home">
+            <h1>Welcome to Travel Explorer</h1>
+            <p>Your gateway to the best travel destinations around the world.</p>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Travel Explorer is dedicated to helping you discover the most beautiful destinations. From serene beaches to historic temples, we have recommendations for every traveler.</p>
+        </section>
+
+        <!-- Contact Us Page -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Beach Recommendation -->
+        <section class="recommendation">
+            <h2>Beach Recommendation</h2>
+            <p>Relax and unwind at these stunning beaches:</p>
+            <img src="./images/beaches/beach-1.jpg" alt="Beach 1">
+            <img src="./images/beaches/beach-2.jpg" alt="Beach 2">
+        </section>
+
+        <!-- Temple Recommendation -->
+        <section class="recommendation">
+            <h2>Temple Recommendation</h2>
+            <p>Explore the spiritual and architectural wonders of these temples:</p>
+            <img src="./images/temple/temple-1.jpeg" alt="Temple 1">
+            <img src="./images/temple/temple-2.jpg" alt="Temple 2">
+        </section>
+
+        <!-- Country-Based Recommendation -->
+        <section class="recommendation">
+            <h2>Recommendation Based on Country</h2>
+            <p>Visit these must-see destinations based on your country of interest:</p>
+            <img src="./images/country/hongkong.webp" alt="Country Recommendation 1">
+            <img src="./images/country/japan.jpg" alt="Country Recommendation 2">
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Travel Explorer. All rights reserved.
+    </footer>
+</body>
+</html>
